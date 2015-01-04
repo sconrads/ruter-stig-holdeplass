@@ -46,7 +46,7 @@ void loop()
     Serial.println("I debug mode ja...");
   #endif
 
-  httpRequest.path = "http://reisapi.ruter.no/stopvisit/getdepartures/3012072";
+  httpRequest.path = "/stopvisit/getdepartures/3012072";
 
   http.get(httpRequest, httpResponse, headers);
   Serial.print("Application>\tResponse status: ");
